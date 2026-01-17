@@ -1,0 +1,290 @@
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+:root {
+ --primary-color: #225197;
+ --light-color: #f4f4f6;
+ --dark-color: #111;
+
+}
+
+body {
+ font-family: 'Poppins', sans-serif;
+ font-size: 16px;
+ line-height: 1.5;
+ background: #fff; 
+}
+
+a {
+ text-decoration: none;
+ color: #333; 
+}
+
+ul{
+ list-style: none; 
+}
+
+img{
+ max-width: 100%;
+}
+
+/*Navbar*/
+.navbar{
+ background: #fff;
+ padding: 20px;
+}
+
+.navbar .container {
+  display : flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .main-menu ul {
+ display: flex;
+}
+
+.navbar ul li a {
+ padding: 10px 20px; 
+ display: block;
+ font-weight: 600;
+ transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+ color: var(--primary-color);
+}
+
+.navbar ul li a i {
+    margin-right: 10px;
+}
+
+.navbar ul li:last-child a {
+    margin-left: 10px;
+}
+
+.nav input[type=text]{
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+/* Resource Search Bar */
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+input {
+    font-size: 1 rem
+}
+
+.resource-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: .25rem;
+    margin-top: 1rem;
+}
+
+.card {
+    border: 1px solid black;
+    background-color: white;
+    padding: .5rem;
+    margin-bottom: .5rem;
+}
+
+.card > .header {
+    margin-bottom:.25rem;
+}
+
+.card > .body {
+    font-size: .8rem;
+    color: #777
+}
+
+.hide {
+    display: none;
+}
+
+
+/*Hero*/
+.hero {
+    margin-bottom: 50px;
+}
+
+.hero .container {
+    background:url('../images/Get\ the\ Help\ You\ Need\ \(1\).png') no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    height: 550px;
+}
+
+.hero .btn {
+    align-items: center;
+    display: flex;
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+/* Info Section */
+.information .container{
+    padding: 10px 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+.food-img {
+    width: 1000px;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.text-container {
+    margin-top: 30px;
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+/* Resources */
+.Resource-heading h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font: Poppins, sans-serif;
+    font-size: 36px;
+}
+
+/* About Home Page Section */
+.About .container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 10px;
+
+}
+
+.About {
+    padding: 10px 0;
+    margin: 10px;
+    text-align: center;
+}
+
+.Resource-heading {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.img-about {
+    width: 1500px;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.about-home-text {
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+
+/* About Page Section */
+.About h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.About p {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+/* Footer */
+.footer .container {
+    padding: 1px 0;
+    text-align: center;
+    height: 200px
+}
+.logo-2 {
+    padding: 10px;
+    width: 100px;
+
+}
+
+.card {
+    font-size: 14px;
+}
+
+/*Utility Classes*/
+.container {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 0 15px;
+}
+.container-sm {
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 0 15px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--light-color);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn-primary{
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn-dark {
+    background: var(--dark-color);
+    color: #fff;
+
+}
+
+/* Background */
+.bg-primary {
+    background: var(--primary-color);
+    color:#fff
+}
+
+.bg-light {
+    background: var(--light-color);
+    color:#333
+}
+
+.bg-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+.bg-blue {
+    background: #225197;
+    color: #fff;
+}
